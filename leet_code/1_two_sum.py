@@ -1,6 +1,6 @@
 from collections import defaultdict
 class Solution:
-    def twoSum(self, nums, target) 
+    def twoSum(self, nums, target): 
         ans = defaultdict(int)
         for i, num in enumerate(nums):
             diff = target - num
