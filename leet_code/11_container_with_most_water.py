@@ -1,5 +1,5 @@
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
+    def maxArea(self, height):
         l = 0
         r = len(height) - 1
         maxi = float('-inf')

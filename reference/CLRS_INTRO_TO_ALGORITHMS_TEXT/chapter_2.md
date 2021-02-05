@@ -24,3 +24,19 @@ def linear_search(a, v):
             return i
     return None
 '''
+
+### 2.1.4  state the problem for adding two n-bit integers stored in two n-length arrays 
+
+* input: two arrays(A and B) representing an integer in binary format where each digit is 0,1 with the length of n-bits
+* output: an array represnting an integer in binary format such that C = A + B where A B C are the integers representation fo the array 
+* python code
+'''
+def add_binary(A, B):
+    C = [None]  * len(A)+1
+    carry = 0
+    for i in len(A):
+        C[i] = (A[i] + B[i] + carry) % 2
+        carry = (A[i] + B[i] + carry) /2
+    C[i] = carry
+    return C 
+'''
