@@ -10,3 +10,7 @@ def getSubstringCount(s):
     for i in range(1, len(groups)):
         ans += min(groups[i-1], groups[i])
     return ans
+
+
+    "00110011"
+    [2,2,2,2]
