@@ -8,4 +8,4 @@ class Solution:
             else:
                 count = 1
             total += count
-        return total
+        return total 
