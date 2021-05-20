@@ -13,7 +13,6 @@ def preOrderTraverse(tree, array):
 	array.append(tree.value)
 	preOrderTraverse(tree.left, array)
 	preOrderTraverse(tree.right, array)
-	
 	return array
 
 def postOrderTraverse(tree, array):
